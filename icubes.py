@@ -184,13 +184,13 @@ aov_by_payment = revenue_by_payment / orders_by_payment
 fig, axes = plt.subplots(3, 1, figsize=(12, 18))
 
 sns.barplot(x=revenue_by_payment.values, y=revenue_by_payment.index, ax=axes[0], palette="Purples_d")
-axes[0].set_title("💳 Total Revenue by Payment Method")
+axes[0].set_title(" Total Revenue by Payment Method")
 
 sns.barplot(x=orders_by_payment.values, y=orders_by_payment.index, ax=axes[1], palette="BuGn_d")
-axes[1].set_title("📦 Number of Orders by Payment Method")
+axes[1].set_title(" Number of Orders by Payment Method")
 
 sns.barplot(x=aov_by_payment.values, y=aov_by_payment.index, ax=axes[2], palette="YlOrBr")
-axes[2].set_title("💰 AOV by Payment Method")
+axes[2].set_title(" AOV by Payment Method")
 
 plt.tight_layout()
 plt.show()
